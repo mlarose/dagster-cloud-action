@@ -119,7 +119,7 @@ def build_dagster_cloud_pex(
     if dagster_oss_branch:
         info(f"Using dagster@{dagster_internal_branch} for dagster package")
         dagster_pkg = f"git+https://github.com/dagster-io/dagster.git@{dagster_oss_branch}#egg=dagster&subdirectory=python_modules/dagster"
-        dagster_shared_pkg = f"git+https://github.com/dagster-io/dagster.git@{dagster_oss_branch}#egg=dagster&subdirectory=python_modules/libraries/dagster-shared"
+        dagster_shared_pkg = f"git+https://github.com/dagster-io/dagster.git@{dagster_oss_branch}#egg=dagster-shared&subdirectory=python_modules/libraries/dagster-shared"
     else:
         info("Using PyPI for dagster package")
         dagster_pkg = "dagster"
