@@ -24,7 +24,12 @@ def run_dagster_cloud_serverless_cmd(args: List[str], map_folders: Mapping[str, 
         *args,
     ]
 
-    subprocess.run(cmd, encoding="utf-8", capture_output=False, check=True)
+    try:
+        result = subprocess.run(cmd, encoding="utf-8", capture_output=True, check=True)
+        print("Command output:", result.stdout)
+    except subprocess.CalledProcessError as e:
+        print("Command failed with error:", e.stderr)
+        raise
 
 
 @pytest.fixture

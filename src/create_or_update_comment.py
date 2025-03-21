@@ -8,13 +8,13 @@ Creates or updates a build status comment on a Pull Request, for branch deployme
 """
 
 SUCCESS_IMAGE_URL = (
-    "https://raw.githubusercontent.com/dagster-io/dagster-cloud-action/main/assets/success.png"
+    "https://raw.githubusercontent.com/mlarose/dagster-cloud-action/main/assets/success.png"
 )
 PENDING_IMAGE_URL = (
-    "https://raw.githubusercontent.com/dagster-io/dagster-cloud-action/main/assets/pending.png"
+    "https://raw.githubusercontent.com/mlarose/dagster-cloud-action/main/assets/pending.png"
 )
 FAILED_IMAGE_URL = (
-    "https://raw.githubusercontent.com/dagster-io/dagster-cloud-action/main/assets/failed.png"
+    "https://raw.githubusercontent.com/mlarose/dagster-cloud-action/main/assets/failed.png"
 )
 
 def main():

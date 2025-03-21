@@ -38,6 +38,6 @@ jobs:
           dagster_cloud_api_token: ${{ secrets.DAGSTER_CLOUD_SERVERLESS_API_TOKEN }}
           location: ${{ toJson(matrix.location) }}
           env_vars: ${{ toJson(secrets) }}
-          base_image: "ghcr.io/dagster-io/dagster-cloud-action:test_custom_base_image"
+          base_image: "ghcr.io/mlarose/dagster-cloud-action:test_custom_base_image"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
