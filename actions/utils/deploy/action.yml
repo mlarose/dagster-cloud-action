@@ -39,7 +39,7 @@ outputs:
     description: "The Cloud deployment associated with this branch."
 runs:
   using: "docker"
-  image: "docker://ghcr.io/mlarose/dagster-cloud-action:0.1.55"
+  image: "docker://ghcr.io/mlarose/dagster-cloud-action:0.1.56"
   entrypoint: "/deploy.sh"
   args:
     - ${{ inputs.pr }}

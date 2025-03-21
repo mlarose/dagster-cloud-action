@@ -74,6 +74,7 @@ def build_docker_action(version_tag: str, publish_docker_action: bool = True):
                 ".",
                 "-f",
                 "src/Dockerfile",
+                "--platform=linux/amd64",
                 "-t",
                 image_name,
             ],
